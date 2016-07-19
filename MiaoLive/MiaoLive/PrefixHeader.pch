@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//
+//
+//  Created by 张杰 on 16/5/8.
+//  Copyright © 2016年 zhangjie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ZJExtense.h"
+#import "UIBarButtonItem+ZJExtension.h"
+
+#pragma mark - defineZJLog
+
+#ifdef DEBUG
+#define ZJLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZJLog(...)
+#endif
+#define ZJLogFunc ZJLog(@"%s",__FUNCTION__)
+
+
+/**
+ *  系统的一些宽高
+ */
+#define ZHJTabbarHeight 49
+#define ZHJNavBarHeight 44
+#define ZHJScreenH [UIScreen mainScreen].bounds.size.height
+#define ZHJScreenW [UIScreen mainScreen].bounds.size.width
+#define ZHJScreenBounds [UIScreen mainScreen].bounds
+#define ZHJStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+
+#endif
