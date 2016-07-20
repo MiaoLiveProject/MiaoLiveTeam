@@ -5,28 +5,7 @@
 //  Created by 张杰 on 16/7/18.
 //  Copyright © 2016年 zhangjie. All rights reserved.
 //  home中最新界面的models
-/*
- {
- "code": "100",
- "msg": "success",
- "data": {
- "totalPage": 17,
- "list": [
- {
- "nickname": "涩面",
- "photo": "http://liveimg.9158.com/pic/avator/2016-05-07/20160507191229717_250.png",
- "sex": 0,
- "starlevel": 0,
- "allnum": 0,
- "new": 0,
- "roomid": 60211530,
- "useridx": 60472973,
- "flv": "http://hdl.9158.com/live/847dacd1c3e5d6a24f9143f86c2e2068.flv",
- "serverid": 3,
- "position": ""
- },
- {
- */
+
 #import <Foundation/Foundation.h>
 
 @interface ZHJNew : NSObject

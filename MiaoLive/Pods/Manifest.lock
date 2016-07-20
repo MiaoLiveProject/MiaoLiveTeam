@@ -36,6 +36,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
   - YYDispatchQueuePool (1.0)
 
 DEPENDENCIES:
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.10)
   - MJRefresh (~> 3.1.1)
   - SDWebImage (~> 3.8.1)
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -60,6 +62,7 @@ SPEC CHECKSUMS:
   MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
   pili-librtmp: 50faa17413c635cca5ceccb1a8f9f6acc6587a45
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
 
 COCOAPODS: 0.39.0

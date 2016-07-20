@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYDispatchQueuePool.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,6 +77,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>020C260B68FED737A5A8C28C470C0CA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>29BEEEA6C25F2F5C3C8EA9B3C583B52E</key>
 		<dict>
 			<key>primary</key>
@@ -83,11 +93,6 @@
 			<true/>
 		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>54042227C7CF406FA0A1AFF04333DB07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +127,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE8F6F24C533A14F3726B6D8EFE1FAB0</key>
+		<key>CD27C794FB44D023C4FBD610D6723863</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDCADC8F2DBA18814236327DDDFC495B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

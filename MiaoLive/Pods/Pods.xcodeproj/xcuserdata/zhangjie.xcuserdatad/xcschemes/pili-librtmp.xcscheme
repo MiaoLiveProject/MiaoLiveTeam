@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '80BCF981EE56D950824B75DF'
+               BlueprintIdentifier = 'FC73C5C49B6602319F0AF63B'
                BlueprintName = 'pili-librtmp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libpili-librtmp.a'>

@@ -14,7 +14,7 @@
 #import "ZHJTopWindow.h"
 #import <MJRefresh.h>
 #import <MJExtension.h>
-#import <MBProgressHUD.h>
+#import <SVProgressHUD.h>
 
 @interface ZHJNewCollectionViewController ()
 
@@ -57,7 +57,9 @@ static NSString * const NewCellID = @"ZHJNewCollectionCell";
     [self setupRefreshControl];
     
     [ZHJTopWindow show];
-
+    
+    [self setupSVProgressHUD];
+    
     // 设置背景yanse
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
@@ -68,9 +70,9 @@ static NSString * const NewCellID = @"ZHJNewCollectionCell";
 
 #pragma mark - 初始化方法
 
-- (void)setupMBProgressHUD
+- (void)setupSVProgressHUD
 {
-    
+    [SVProgressHUD showImage:[UIImage imageNamed:@"hold1_60x72"] status:@"数据加载中..."];
 }
 
 - (void)setupRefreshControl
@@ -105,6 +107,9 @@ static NSString * const NewCellID = @"ZHJNewCollectionCell";
         // 监听进度
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 成功返回数据时回调
+        // 隐藏提示hud
+        [SVProgressHUD dismiss];
+        
         // 停止刷新
         [self.collectionView.mj_header endRefreshing];
         [self.collectionView.mj_footer endRefreshing];
@@ -113,6 +118,8 @@ static NSString * const NewCellID = @"ZHJNewCollectionCell";
         if([responseObject[@"msg"] isEqualToString:@"fail"])
         {
             NSLog(@"全部数据加载完毕");
+            // page恢复到前一页
+            self.page--;
             // 提示用户已经没有数据了
             [self.collectionView.mj_footer endRefreshingWithNoMoreData];
             return;
@@ -131,7 +138,8 @@ static NSString * const NewCellID = @"ZHJNewCollectionCell";
         {
             self.page--;
         }
-        
+        [SVProgressHUD setMinimumDismissTimeInterval:1.0];
+        [SVProgressHUD showErrorWithStatus:@"数据加载失败"];
         // 停止刷新
         [self.collectionView.mj_header endRefreshing];
         [self.collectionView.mj_footer endRefreshing];
